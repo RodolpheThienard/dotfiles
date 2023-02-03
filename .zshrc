@@ -75,6 +75,7 @@ ZSH_THEME="gnzh" # set by `omz`
 plugins=(
 	git
 	zsh-autosuggestions
+  ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -104,33 +105,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ff=firefox
-
-if [ -f ~/.ssh/agent.env ] ; then
-
-    . ~/.ssh/agent.env > /dev/null
-
-    if ! kill -0 $SSH_AGENT_PID > /dev/null 2>&1; then
-
-        echo "Stale agent file found. Spawning a new agent. "
-
-        eval `ssh-agent | tee ~/.ssh/agent.env`
-
-        ssh-add
-				xbindkeys
-    fi
-
-else
-
-    echo "Starting ssh-agent"
-
-    eval `ssh-agent | tee ~/.ssh/agent.env`
-
-    ssh-add
-
-fi
-
+xbindkeys
+alias "ff=firefox"
 alias "cat=bat"
-export PROMPT_COMMAND="pwd > /tmp/whereami"
 alias "h=helix"
 alias "z=zathura"
+alias "todo=helix ~/todo.md"
+alias "c=~/.config/scripts/./darkmode.sh d"
+alias "cl=~/.config/scripts/./darkmode.sh l"
