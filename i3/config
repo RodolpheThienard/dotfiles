@@ -26,12 +26,12 @@ font pango:monospace 15
 #font pango:DejaVu Sans Mono 8
 
 # start a terminal. We use kitty.
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec wezterm
 # start floating terminal
 for_window[instance="float-term"] floating enable
 for_window[instance="float-term"] resize set 500 300
 for_window[instance="float-term"] move position 1390 750
-bindsym $mod+Shift+Return exec --no-startup-id exec kitty --class="float-term"
+bindsym $mod+Shift+Return exec --no-startup-id exec wezterm start --class="float-term"
 #bindsym $mod+Shift+Return exec i3-sensible-terminal && floating enable && move position 1350 700
 
 # kill focused window
