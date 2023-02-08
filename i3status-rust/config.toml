@@ -1,0 +1,48 @@
+theme = "native"
+icons = "awesome"
+
+
+[[block]]
+block = "time"
+interval = 5
+format = "%a %d/%m %R"
+
+[[block]]
+block = "backlight"
+device = "intel_backlight"
+
+[[block]]
+block = "memory"
+format_mem = "{mem_used}/{mem_total}"
+format_swap = "{swap_used}/{swap_total}"
+icons = false
+clickable = true
+interval = 1
+warning_mem = 80
+critical_mem = 95
+
+[[block]]
+block = "cpu"
+icons_format= ""
+format = "{utilization} {barchart}"
+interval = 1
+
+[[block]]
+block = "custom"
+command =''' /./home/rodolphe/.config/i3status-rust/modules/temp.sh''' 
+interval = 1
+
+[[block]]
+block = "sound"
+on_click = "i3-msg exec 'pavucontrol'"
+
+[[block]]
+block = "battery"
+if_command = "test -e /sys/class/power_supply/BAT0"
+
+[[block]]
+block = "networkmanager"
+interface_name_exclude = ['br\-[0-9]{12}', 'docker\d+']
+interface_name_include = []
+ap_format= ""
+
