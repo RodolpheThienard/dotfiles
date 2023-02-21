@@ -20,7 +20,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec  rofi -show drun -theme Monokai -icon-theme "Tela-circle" -show-icons
 
 # Display Wallpaper, always.
-exec_always feh --bg-fill /usr/share/backgrounds/i3/wall.png
+exec_always feh --bg-fill /home/rodolphe/wallpaper-light.png
 
 # Provide Gaps to Windows. Increase/Decrease as you like.
 gaps inner 10
@@ -140,7 +140,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -173,8 +173,8 @@ bar {
     status_command i3status-rs
     position top
     colors{ 
-        background #282C34
-        separator #fbf8ef
-        statusline #fbf8ef
+        background #FFFADE
+        separator #21252D
+        statusline #21252D
     }
 }

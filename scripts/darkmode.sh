@@ -8,10 +8,12 @@ if [ $1 = 'l' ]; then
   # Wezterm
   sed -i 's/color_scheme = ".*"/color_scheme = "light"/' ${HOME}/.config/wezterm/wezterm.lua
   # I3
-  sed -i 's/background #282C34/background #fbf8ef/' ${HOME}/.config/i3/config
-  sed -i 's/separator #fbf8ef/separator #282C34/' ${HOME}/.config/i3/config
-  sed -i 's/statusline #fbf8ef/statusline #282C34/' ${HOME}/.config/i3/config
-  i3-msg reload
+  sed -i 's/background #21252D/background #FFFADE/' ${HOME}/.config/i3/config
+  sed -i 's/separator #FFFADE/separator #21252D/' ${HOME}/.config/i3/config
+  sed -i 's/statusline #FFFADE/statusline #21252D/' ${HOME}/.config/i3/config
+  sed -i 's/wallpaper.jpg/wallpaper-light.png/' ${HOME}/.config/i3/config
+  gsettings set org.gnome.desktop.interface color-scheme prefer-light
+  i3-msg restart >> /dev/null
   pkill -10 hx
 
 else
@@ -21,9 +23,11 @@ else
   # Wezterm
   sed -i 's/color_scheme = ".*"/color_scheme = "dark"/' ${HOME}/.config/wezterm/wezterm.lua
   # I3
-  sed -i 's/background #fbf8ef/background #282C34/' ${HOME}/.config/i3/config
-  sed -i 's/separator #282C34/separator #fbf8ef/' ${HOME}/.config/i3/config
-  sed -i 's/statusline #282C34/statusline #fbf8ef/' ${HOME}/.config/i3/config
-  i3-msg reload
+  sed -i 's/background #FFFADE/background #21252D/' ${HOME}/.config/i3/config
+  sed -i 's/separator #21252D/separator #FFFADE/' ${HOME}/.config/i3/config
+  sed -i 's/statusline #21252D/statusline #FFFADE/' ${HOME}/.config/i3/config
+  sed -i 's/wallpaper-light.png/wallpaper.jpg/' ${HOME}/.config/i3/config
+  gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+  i3-msg restart >> /dev/null
   pkill -10 hx
 fi 

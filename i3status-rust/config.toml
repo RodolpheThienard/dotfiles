@@ -8,8 +8,13 @@ interval = 5
 format = "%a %d/%m %R"
 
 [[block]]
-block = "backlight"
-device = "intel_backlight"
+block = "custom"
+command =''' /./home/rodolphe/.config/i3status-rust/modules/fan.sh''' 
+interval = 1
+
+# [[block]]
+# block = "backlight"
+# device = "intel_backlight"
 
 [[block]]
 block = "memory"
@@ -42,7 +47,7 @@ if_command = "test -e /sys/class/power_supply/BAT0"
 
 [[block]]
 block = "networkmanager"
-interface_name_exclude = ['br\-[0-9]{12}', 'docker\d+']
+interface_name_exclude = ['br\-[0-9]{12}', 'docker\d+', '127.0.0.1']
 interface_name_include = []
-ap_format= ""
-
+primary_only = true
+device_format = "{ap} {ips}"
