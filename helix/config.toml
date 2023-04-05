@@ -1,7 +1,7 @@
 theme = "spacebones_light"
 
 [editor]
-scrolloff = 4
+scrolloff = 1
 line-number = "relative"
 cursorline = true
 rulers = [72, 103]

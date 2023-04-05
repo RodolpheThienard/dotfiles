@@ -16,7 +16,7 @@ full = "$icon $timestamp.datetime(f:'%a %d/%m %R', l:fr_BE)"
 
 [[block]]
 block = "memory"
-format = "$mem_used.eng(w:1)/$mem_total "
+format = "$mem_used.eng(w:3)/$mem_total "
 format_alt = " $icon_swap $swap_free.eng(w:3,u:B,p:M)/$swap_total.eng(w:3,u:B,p:M)($swap_used_percents.eng(w:2)) "
 interval = 1
 warning_mem = 80
