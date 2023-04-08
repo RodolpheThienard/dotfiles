@@ -5,13 +5,13 @@ set $mod Mod4
 font pango:monospace 15
 
 # start a terminal. We use kitty.
-bindsym $mod+Return exec  wezterm
+bindsym $mod+Return exec kitty
 
 # start custom floating terminal
 for_window[instance="float-term"] floating enable
 for_window[instance="float-term"] resize set 500 300
 for_window[instance="float-term"] move position 1390 750
-bindsym $mod+Shift+Return exec  wezterm start --class="float-term"
+bindsym $mod+Shift+Return exec kitty --class="float-term"
 
 # kill focused window
 bindsym $mod+Shift+q kill
