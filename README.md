@@ -2,7 +2,7 @@
 
 - Operating System : Arch Linux
 - Window Manager : I3
-- Bar : Polybar
+- Bar : I3status-rust
 - Terminal Emulator : Kitty
 - App Launcher : Rofi
 - Text Editor : Helix
