@@ -5,7 +5,7 @@ alias "z=zathura"
 alias "todo=helix ~/todo.md"
 alias "c=~/.config/scripts/./darkmode.sh d"
 alias "cl=~/.config/scripts/./darkmode.sh l"
-
+alias hg='history 1 | grep'
 alias ls='ls --color=tty'
 alias la='ls -a --color=tty'
 alias l='ls -la --color=tty'

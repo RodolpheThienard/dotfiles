@@ -107,6 +107,9 @@ export MOZ_USE_XINPUT2=1
 # maple
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+#MPI
+export PATH=/usr/local/mpich-3.4.1/bin:$PATH
+
 # cursors
 export XCURSOR_PATH=~/.local/share/icons
 
