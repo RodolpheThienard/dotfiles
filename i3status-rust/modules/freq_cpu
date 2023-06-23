@@ -1,7 +1,0 @@
-#!/bin/bash
-
-freq_path=$(cat /proc/cpuinfo | grep MHz)
-value=${freq_path##*:}
-
-echo $value
-echo $freq_path

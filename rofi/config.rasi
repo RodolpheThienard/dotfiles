@@ -1,9 +1,0 @@
-//@theme "/usr/share/rofi/themes/Monokai.rasi"
-//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-
-configuration {
- modi: "window,drun,ssh,combi,calc";
- font: "hack 10";
- combi-modi: "window,drun,ssh,calc";
- }
-@theme "/usr/share/rofi/themes/Monokai.rasi"
