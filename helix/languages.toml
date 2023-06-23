@@ -1,0 +1,5 @@
+[[language]]
+name = "c"
+auto-format = true
+language-server = { command = "clangd" }
+formatter = { command = "clang-format", args=["--style={BasedOnStyle: GNU, IndentWidth: 2}"]}
