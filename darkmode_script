@@ -1,0 +1,2 @@
+light: ln -fs ~/.config/alacritty/alacritty_light.yml ~/.config/alacritty/alacritty.yml; ln -fs ~/.config/helix/config_light.toml ~/.config/helix/config.toml;pkill -USR1 hx;ln -fs ~/.config/zathura/zathurarc_light ~/.config/zathura/zathurarc;ln -fs ~/.config/bat/light ~/.config/bat/config
+dark: ln -fs ~/.config/alacritty/alacritty_dark.yml ~/.config/alacritty/alacritty.yml; ln -fs ~/.config/helix/config_dark.toml ~/.config/helix/config.toml;pkill -USR1 hx;ln -fs ~/.config/zathura/zathurarc_dark ~/.config/zathura/zathurarc;ln -fs ~/.config/bat/dark ~/.config/bat/config
