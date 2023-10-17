@@ -24,5 +24,5 @@
   
 ## Screenshots
 
-<img src=".screenshots/black.png" width="600">
+<img src=".screenshots/dark.png" width="600">
 <img src=".screenshots/light.png" width="600">
