@@ -9,6 +9,7 @@ function share;
 
 #export HELIX_RUNTIME=/home/user-name/src/helix/runtime
 export PATH="$HOME/.cargo/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/lib"
 
 alias l="ls -l"
 alias la="ls -la"
@@ -21,3 +22,7 @@ alias spack-init="source /usr/share/spack/share/spack/setup-env.fish"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias todo="hx ~/todo.md"
+alias ruche="ssh mchps-14@ruche.mesocentre.universite-paris-saclay.fr"
+
+# Created by `pipx` on 2023-10-24 08:45:32
+set PATH $PATH /home/rodolphe/.local/bin
