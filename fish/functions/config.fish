@@ -8,11 +8,9 @@ function share;
 ;end
 
 
-alias z=zellij
-alias bat=batcat
-alias ls=exa
-alias mark3_net="ssh rodolphe@176.136.255.47"
-alias mark3="ssh rodolphe@192.168.1.6"
-alias spack-init="source /usr/share/spack/share/spack/setup-env.fish"
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+function pomodoro 
+  echo $argv[1] | lolcat
+  timer "$argv[2]"m 
+  notify-send -u critical "Take a break" "you've just finished a $argv[2]-minutes work session"
+end
+
