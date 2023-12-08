@@ -53,3 +53,11 @@ render = true
 [editor.soft-wrap]
 enable = true
 
+[keys.normal]
+"{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
+"}" = ["extend_to_line_bounds", "goto_next_paragraph"]
+
+[keys.select]
+"{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
+"}" = ["extend_to_line_bounds", "goto_next_paragraph"]
+
